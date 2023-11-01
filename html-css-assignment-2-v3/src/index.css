@@ -1,0 +1,121 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; //grayscale
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.left-section {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile {
+    text-align: center;
+}
+
+.image img {
+    border-radius: 50px;
+}
+
+.contact-info,
+.skills.section {
+    margin-top: 20px;
+}
+
+.contact.info nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact.info nav li {
+    margin-bottom: 10px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-section .icon {
+    margin-right: 10px;
+}
+
+.ms-circle {
+    width: 20px;
+    height: 20px;
+    background-color: 33498db;
+    border-radius: 50%;
+}
+
+.right-main-contact{
+    width: 100%;
+}
+
+.about,
+.work-sect,
+.experince,
+.education-sect {
+    margin-bottom: 30px;
+}
+
+.right-title {
+    color: #333;
+}
+
+.tl-title,
+.tl-title-2 {
+    color: #3498db;
+}
+
+tl.content {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form {
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    main.content {
+        grid-template-columns: 1fr;
+    }
+
+    .right-section,
+    .left-section {
+        padding: 15px;
+    }
+}
